@@ -1,8 +1,30 @@
 aid: deepfactor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/deepfactor.png
 name: deepfactor
-description: 'deepfactor is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Deepfactor was an application security (AppSec / ASPM) platform for cloud-native and
+  containerized applications. Its integrated approach combined software composition analysis
+  (SCA), software bill of materials (SBOM) generation, container image scanning, and container
+  runtime security into a single developer-security platform. Its differentiating capability was
+  runtime software composition analysis / runtime reachability, correlating static scans with
+  observed runtime application behavior so teams could prioritize vulnerability remediation based
+  on true usage. Use cases spanned Shift-Left & DevSecOps, supply chain security, SBOM, container
+  runtime security & compliance (SOC 2), and cloud-native application security. Backed by Insight
+  Partners. As of this enrichment pass (2026-07) the public website is offline — the apex domain
+  (deepfactor.io) returns a Cisco 503 error page and the WP Engine-hosted www/docs hosts return
+  "Site is not available", and DNS for the apex resolves to Cisco infrastructure; there is no
+  live developer portal, API, SDK, CLI, GitHub organization, or published package to harvest.
 url: https://raw.githubusercontent.com/api-evangelist/deepfactor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +32,20 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct-site-offline
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Cybersecurity
+- Application Security
+- DevSecOps
+- SBOM
+- Software Composition Analysis
+- Container Security
+- Supply Chain Security
+- Cloud Native
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +53,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/deepfactor-domain-security.yml
 - type: Website
   url: https://www.deepfactor.io/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
